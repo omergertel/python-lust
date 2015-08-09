@@ -14,7 +14,7 @@ config = {
      'scripts': [],
      'install_requires': [],
      'packages': ['lust'],
-     'name': 'python-lust'
+     'name': 'python3-lust'
 }
 
 setup(**config)
