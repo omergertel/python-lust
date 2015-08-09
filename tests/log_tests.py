@@ -1,6 +1,6 @@
 from nose.tools import *
 from lust import log
-from mock import patch
+from unittest.mock import patch
 
 
 @patch("sys.stdout")

@@ -29,20 +29,20 @@ def setup(log_path, force=False):
         SETUP=True
 
 def warn(msg):
-    print "[%s] WARN: %s" % (time.ctime(), msg)
+    print("[{}] WARN: {}".format(time.ctime(), msg))
 
 
 def error(msg):
-    print "[%s] ERROR: %s" % (time.ctime(), msg)
+    print("[{}] ERROR: {}".format(time.ctime(), msg))
 
 
 def info(msg):
-    print "[%s] INFO: %s" % (time.ctime(), msg)
+    print("[{}] INFO: {}".format(time.ctime(), msg))
 
 
 def debug(msg):
     if not DEBUG:
-        print "[%s] DEBUG: %s" % (time.ctime(), msg)
+        print("[{}] DEBUG: {}".format(time.ctime(), msg))
 
 
 def set_debug_level(on):

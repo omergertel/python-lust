@@ -1,6 +1,6 @@
 from nose.tools import *
 from lust import unix, log
-from mock import patch, Mock
+from unittest.mock import patch, Mock
 import sys
 import os
 import time

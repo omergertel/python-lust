@@ -51,8 +51,8 @@ class Simple(object):
 
 
     def status(self, args):
-        print "Server running at pid %d" % unix.pid_read(self.name,
-                                                         pid_file_path=self.pid_path)
+        print("Server running at pid {}".format(unix.pid_read(self.name,
+                                                         pid_file_path=self.pid_path)))
 
     def shutdown(self, signal):
         pass

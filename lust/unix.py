@@ -8,7 +8,7 @@ def make_pid_file_path(name, pid_file_path="/var/run"):
     return os.path.join(pid_file_path, name + ".pid")
 
 def pid_store(name, pid_file_path="/var/run"):
-    os.umask(077) # set umask for pid
+    os.umask(int('077', 8)) # set umask for pid
     pid_path = make_pid_file_path(name, pid_file_path)
 
     with open(pid_path, "w") as f:
@@ -122,7 +122,7 @@ def drop_privileges(running_uid, running_gid):
     os.setuid(running_uid)
 
     # Ensure a very conservative umask
-    os.umask(077)
+    os.umask(int('077', 8))
 
 
 def register_signal(handler, signals):
